@@ -50,10 +50,12 @@ NGINX Plus + ``NGINX App Protect Dos`` のDocker Imageです
 サンプルコンフィグの応答内容
 ----
 
-応答内容は、NGINX Plusのイメージと同じです。NGINX App Protect Dosが有効になっているため、それらのサンプルコンフィグが設定されています
+応答内容は、 `NGINX Plus のイメージ <#plus>`__ と同じです。NGINX App Protect Dosが有効になっているため、それらのサンプルコンフィグが設定されています
 
 Buildコマンド
 ----
+
+.. code-block:: cmdin
 
   ./buildNGINXcontainer.sh -o ubuntu20 -i plus-napd -t plus-napd -C nginx-repo.crt -K nginx-repo.key
 
@@ -65,11 +67,13 @@ NGINX Plus + ``NGINX App Protect WAF`` のDocker Imageです
 サンプルコンフィグの応答内容
 ----
 
-応答内容は、NGINX Plusのイメージと同じです。NGINX App Protect WAFが有効になっているため、それらのサンプルコンフィグが設定されています。
+応答内容は、 `NGINX Plus のイメージ <#plus>`__ と同じです。NGINX App Protect WAFが有効になっているため、それらのサンプルコンフィグが設定されています。
 攻撃トラフィックを実行するとデフォルトのブロックページが表示されます
 
 Buildコマンド
 ----
+
+.. code-block:: cmdin
 
   ./buildNGINXcontainer.sh -o ubuntu20 -i plus-napw -t plus-napw -C nginx-repo.crt -K nginx-repo.key
 
@@ -81,11 +85,13 @@ NGINX Plus + ``NGINX App Protect WAF/DoS`` のDocker Imageです
 サンプルコンフィグの応答内容
 ----
 
-応答内容は、NGINX Plusのイメージと同じです。
+応答内容は、 `NGINX Plus のイメージ <#plus>`__ と同じです。
 NGINX App Protect WAF、NGINX App Protect Dosが有効になっています。
 
 Buildコマンド
 ----
+
+.. code-block:: cmdin
 
   ./buildNGINXcontainer.sh -o ubuntu20 -i plus-napw-napd -t plus-napw-napd -C nginx-repo.crt -K nginx-repo.key
 
@@ -97,12 +103,14 @@ NGINX Plus + ``NGINX App Protect WAF/DoS, LUA Module, NJS Module`` のDocker Ima
 サンプルコンフィグの応答内容
 ----
 
-応答内容は、NGINX Plus + Lua Module , NJS Module のイメージと同じです。
+応答内容は、 `NGINX Plus + Lua Module , NJS Module のイメージ <#plus-lua-njs>`__ と同じです。
 NGINX App Protect WAF、NGINX App Protect Dosが有効になっています。
 
 
 Buildコマンド
 ----
+
+.. code-block:: cmdin
 
   ./buildNGINXcontainer.sh -o ubuntu20 -i plus-napw-napd-lua-njs -t plus-napw-napd-lua-njs -C nginx-repo.crt -K nginx-repo.key
 
@@ -117,6 +125,8 @@ Buildコマンド
 
 Buildコマンド
 ----
+
+.. code-block:: cmdin
 
   ./buildNGINXcontainer.sh -o ubuntu20 -i agent-plus -t agent-plus -C nginx-repo.crt -K nginx-repo.key -n "https://10.1.1.5"
 
@@ -134,6 +144,8 @@ NGINX Plus のコマンドに加え、NGINX Agent を取得する際の宛先 ``
 Buildコマンド
 ----
 
+.. code-block:: cmdin
+
   ./buildNGINXcontainer.sh -o ubuntu20 -i agent-plus -t agent-plus -C nginx-repo.crt -K nginx-repo.key -n "https://10.1.1.5"
 
 NGINX Plus のコマンドに加え、NGINX Agent を取得する際の宛先 ``https://<NMS IP Address>`` をオプションパラメータで指定します
@@ -150,6 +162,8 @@ NGINX Plus のコマンドに加え、NGINX Agent を取得する際の宛先 ``
 Buildコマンド
 ----
 
+.. code-block:: cmdin
+
   ./buildNGINXcontainer.sh -o ubuntu20 -i agent-plus-napd -t agent-plus-napd -C nginx-repo.crt -K nginx-repo.key -n "https://10.1.1.5"
 
 NGINX Plus のコマンドに加え、NGINX Agent を取得する際の宛先 ``https://<NMS IP Address>`` をオプションパラメータで指定します
@@ -164,6 +178,8 @@ NGINX Plus のコマンドに加え、NGINX Agent を取得する際の宛先 ``
 
 Buildコマンド
 ----
+
+.. code-block:: cmdin
 
   ./buildNGINXcontainer.sh -o ubuntu20 -i agent-plus-napw -t agent-plus-napw -C nginx-repo.crt -K nginx-repo.key -n "https://10.1.1.5"
 
@@ -181,6 +197,8 @@ NGINX Plus のコマンドに加え、NGINX Agent を取得する際の宛先 ``
 Buildコマンド
 ----
 
+.. code-block:: cmdin
+
   ./buildNGINXcontainer.sh -o ubuntu20 -i agent-plus-napw-napd -t agent-plus-napw-napd -C nginx-repo.crt -K nginx-repo.key -n "https://10.1.1.5"
 
 NGINX Plus のコマンドに加え、NGINX Agent を取得する際の宛先 ``https://<NMS IP Address>`` をオプションパラメータで指定します
@@ -196,6 +214,8 @@ NGINX Plus のコマンドに加え、NGINX Agent を取得する際の宛先 ``
 
 Buildコマンド
 ----
+
+.. code-block:: cmdin
 
   ./buildNGINXcontainer.sh -o ubuntu20 -i agent-plus-napw-napd-lua-njs -t agent-plus-napw-napd-lua-njs -C nginx-repo.crt -K nginx-repo.key -n "https://10.1.1.5"
 
