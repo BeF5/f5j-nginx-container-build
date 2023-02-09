@@ -167,6 +167,7 @@ Buildコマンド
   ./buildNGINXcontainer.sh -o ubuntu20 -i agent-plus-napd -t agent-plus-napd -C nginx-repo.crt -K nginx-repo.key -n "https://10.1.1.5"
 
 NGINX Plus のコマンドに加え、NGINX Agent を取得する際の宛先 ``https://<NMS IP Address>`` をオプションパラメータで指定します
+
 10. agent-plus-napw
 ====
 
