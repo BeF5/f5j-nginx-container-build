@@ -143,12 +143,16 @@ Docker Compose file
   - ``NMS_INSTANCEGROUP (option)`` : インスタンス接続時にインスタンスグループに登録する場合のグループ名(napw-cluster)
   - ``NMS_TAG (option)`` : インスタンス接続時にタグを付与して登録する場合のタグ(napw-proxy)
 
+Docker Compose コマンドの実行
+
 .. code-block:: cmdin
 
   docker-compose -f docker-compose-nginx.yaml up -d
 
 
 - docker run
+
+Docker コマンドの実行
 
 .. code-block:: cmdin
 
