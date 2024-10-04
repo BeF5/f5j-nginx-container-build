@@ -2,6 +2,7 @@ NGINX Docker ContainerのBuild
 ####
 
 本手順ではいくつかのDocker ContainerのBuild手順を紹介します。
+なお、利用するマシーンは”docker_host”になります
 
 0. 必要なファイルの取得
 ====
