@@ -90,7 +90,7 @@ NGINX Docker ContainerのBuild
   - ``/api`` は、 ``NGINX Plus API`` に接続、応答します 
   - ``/dashboard.html`` は、 ``NGINX Plus Dasbhaord`` に接続、応答します
 
-2. Docker Buildコマンド
+3. Docker Buildコマンド
 ----
 
 - Base OS Image ``Ubuntu20.04`` , ``NGINX Plus`` Docker Image
@@ -111,7 +111,7 @@ NGINX Docker ContainerのBuild
 
   ./buildNGINXcontainer.sh  -o ubuntu20 -i plus -t plus -C nginx-repo.crt -K nginx-repo.key -n "https://10.1.1.5"
 
-3. Docker 実行
+4. Docker 実行
 ----
 
 - docker Compose
